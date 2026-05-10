@@ -156,11 +156,18 @@ button { font-family: inherit; }
 }
 
 .nav-logo {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 22px;
-  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
 }
+
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.nav-logo:hover .nav-logo-img { opacity: 0.75; }
 
 .nav-links {
   display: flex;
